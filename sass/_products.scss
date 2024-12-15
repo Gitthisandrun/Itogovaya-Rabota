@@ -1,0 +1,61 @@
+.products {
+
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+
+    @media screen and (max-width:1024px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-top: 26px;
+
+    @media screen and (max-width: 920px) {
+      justify-content: center;
+      padding-top: 12px;
+      }
+
+    :nth-child(4) {
+      @media screen and (max-width: 920px) {
+        order: 6;
+      }
+    }
+
+    & button {
+      padding: 14px 24px;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      border: 4px solid white;
+      color: white;
+      background: none;
+      transition: all 200ms ease-in;
+
+      @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      }
+
+      @media screen and (max-width: 768px) {
+        letter-spacing: normal;
+        }
+
+      &:hover {
+      background-color: #4FB5C0;
+      border: 4px solid #6AECF8;
+      color: #131510;
+      }
+    }
+  }
+}

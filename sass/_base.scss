@@ -1,0 +1,60 @@
+body {
+  text-align: justify;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-background {
+    background-image: url(/Itogovaya-Rabota/images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    max-width: 1240px;
+    padding: 114px 0 26px 142px;
+
+    @media screen and (max-width: 1600px) {
+      padding: 48px 0 20px 32px;
+    }
+
+    @media screen and (max-width: 1280px) {
+      gap: 24px;
+    }
+
+    @media screen and (max-width: 940px) {
+      padding: 48px 32px 32px 32px;
+      align-items: center;
+    }
+  }
+
+  body {
+    font-family: 'Roboto';
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  section {
+    padding-top: 64px;
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 24px;
+    }
+  }
+
